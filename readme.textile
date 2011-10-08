@@ -1,0 +1,3 @@
+This is a framework for building presentations with html5, "HAML":http://haml-lang.com/, "SASS":http://sass-lang.com/, "Compass":http://compass-style.org/, and "middleman":http://middlemanapp.com/ in the visual style of "html5rocks":http://slides.html5rocks.com/.
+
+Clone the project, fire up a middleman in the project directory and check it out.
