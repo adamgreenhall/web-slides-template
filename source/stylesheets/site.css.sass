@@ -8,7 +8,10 @@ body
     font-family: serif
     +link-color($charcoal)
     +full-abs-pos
-
+.hyphenate
+    text-align: justify
+iframe
+    overflow: scroll
 .presentation
     +full-abs-pos
     display: block
@@ -81,6 +84,9 @@ body
 #table-of-contents
     ul
         li
+            margin-left: 50px
+            margin-bottom: 20px
+            font-size: 130%
             a
-                text-decoration: underline
+                // text-decoration: underline
                 cursor: pointer

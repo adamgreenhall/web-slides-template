@@ -1,17 +1,39 @@
--@title='Haml Slides Demo'
+-@title='Web Slides Demo'
 
 .slide#start
-    %header Web Presentations
-    %section.hyphenate
+    %header Web Slides
+    %section
         :textile
             This is a framework for building presentations with html5, "HAML":http://haml-lang.com/, "SASS":http://sass-lang.com/, "Compass":http://compass-style.org/, and "middleman":http://middlemanapp.com/ in the visual style of "html5rocks":http://slides.html5rocks.com/.
     =partial('start-bio')
 
+=partial('toc',:locals=>{:sections=>[ ['The beginning','start'], ['The browsers','browsers'],['The style','style'] ]})
             
-.slide#second-slide
-    %header Number two
+.slide#browsers
+    %header The browsers
     %section.middle
         :textile
-            Testing the second slide.
+            This should work in all modern browsers (Firefox, Chrome, Safari) capable of HTML5 and CSS3. 
+            
+             
 
-=partial('toc',:locals=>{:sections=>[ ['The beginning','start'], ['The browsers','second-slide'] ]})
+.slide#style
+    %header Style
+    %section.top
+        :textile
+            Thanks to "SASS":http://sass-lang.com/ and "Compass":http://compass-style.org/, the styles (which still need some work) are easy to write. 
+            
+.slide#hypens
+    %header Hypenation
+    %section
+        :textile
+            Thanks "Hyphenator":http://code.google.com/p/hyphenator/.
+        %p.hyphenate
+            Lorem ipsum dolor sit amet, tenetur eu condimentum. Penatibus mollis, dignissim hendrerit duis penatibus vestibulum, rutrum euismod pellentesqueabeltime elit malesuadaabet purus, velocityaben cras bibendum lorem, in mattis id duis imperdiet auctor. Sagittis faucibus leo, phasellus auctor fusce, semper elit odio nec facilisis quisque ipsum, rutrum tincidunt mauris et adipiscing, ante feugiat magna mauris. Elit tortor praesent proin rutrum mattis tempus, interdum litora pellentesque sit donec ut, pede pulvinar ipsum, sodales amet massa orci, mattis aliquam. Vel nunc nec metus suspendisse urna molestie, blandit morbi nec nulla felis. Velit in eros, sit erat.
+    
+
+.slide#iframes
+    %header iframes
+    %p Take an example project site and throw it up as an iframe:
+    %br
+    %iframe{:src=>"http://minpowertoolkit.com/", :height=>"75%", :width=>"90%"}
