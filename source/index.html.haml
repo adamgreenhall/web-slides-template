@@ -14,13 +14,4 @@
         :textile
             Testing the second slide.
 
-            
-.slide#table-of-contents
-    %header Table of Contents
-    %ul#toc-list
-        %li 
-            %a{:'data-hash'=>'start'}
-                The beginning
-        %li 
-            %a{:'data-hash'=>'second-slide'}
-                The second slide
+=partial('toc',:locals=>{:sections=>[ ['The beginning','start'], ['The browsers','second-slide'] ]})

@@ -69,5 +69,18 @@ body
         margin-top: 150px
 
 #bio
+    +no-link-underline
+    img
+        vertical-align: middle
+        width: 100px
+        +border-radius(10px)
+        +single-box-shadow(lightgray, 2px, 2px, 10px)
+    margin-top: -100px
     .name
         font-size: 200%
+#table-of-contents
+    ul
+        li
+            a
+                text-decoration: underline
+                cursor: pointer

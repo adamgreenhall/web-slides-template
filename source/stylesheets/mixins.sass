@@ -3,9 +3,6 @@
 $light-blue: #96c7cd
 $charcoal: #696969
 $ghost-gray: #cdcdcd
-$tocbarcolor: #FAFAFA
-$content-max-width: 30em
-$content-min-width: 20em
 $noborder: 0px
 
 
@@ -28,23 +25,12 @@ $font-base-size: 20px
     width: $slide-width
     height: $slide-height
 
-
-@mixin max-min-width
-    max-width: $content-max-width
-    min-width: $content-min-width
-
-@mixin drop-max-min-width
-    max-width: none
-    min-width: none
-
-@mixin alicefont
-    font-family: "Alice", serif
-
 @mixin uppercase
     text-transform: uppercase
 
 @mixin no-link-underline
     a
+        text-decoration: none
         border-bottom: 0px
 
 @mixin link-color($linkcolor, $hover: false, $active: false, $visited: false, $focus: false)

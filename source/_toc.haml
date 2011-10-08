@@ -1,0 +1,8 @@
+.slide#table-of-contents
+    %header Table of Contents
+    %ul#toc-list
+        - sections.each do |section_name,hash|
+            %li
+                %a{:'data-hash'=>"#{hash}"}
+                    =section_name
+                
