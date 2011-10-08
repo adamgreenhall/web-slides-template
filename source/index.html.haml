@@ -1,0 +1,26 @@
+-@title='Haml Slides Demo'
+
+.slide#start
+    %header Web Presentations
+    %section.hyphenate
+        :textile
+            This is a framework for building presentations with html5, "HAML":http://haml-lang.com/, "SASS":http://sass-lang.com/, "Compass":http://compass-style.org/, and "middleman":http://middlemanapp.com/ in the visual style of "html5rocks":http://slides.html5rocks.com/.
+    =partial('start-bio')
+
+            
+.slide#second-slide
+    %header Number two
+    %section.middle
+        :textile
+            Testing the second slide.
+
+            
+.slide#table-of-contents
+    %header Table of Contents
+    %ul#toc-list
+        %li 
+            %a{:'data-hash'=>'start'}
+                The beginning
+        %li 
+            %a{:'data-hash'=>'second-slide'}
+                The second slide

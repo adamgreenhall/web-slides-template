@@ -1,0 +1,73 @@
+@import mixins
+@import nav
+@import slide-positions
+
+@include global-reset
+
+body
+    font-family: serif
+    +link-color($charcoal)
+    +full-abs-pos
+
+.presentation
+    +full-abs-pos
+    display: block
+    overflow: hidden
+    background: lighten(blue,45%)
+
+.slides
+    +full-abs-pos
+    display: none
+    +single-transition(1s, ease-in-out)
+
+
+.slide
+    +background-image(linear-gradient(white, lighten($ghost-gray,15%)))
+    +border-radius(10px, 10px)
+    +single-box-shadow(lighten($ghost-gray,0%))
+    +single-transition(margin, 0.5s, ease-in-out)
+    padding: 20px
+    display: none
+    position: absolute
+    left: 50%
+    top: 30px
+    overflow: hidden
+    +slide-wh
+    background-color: #eee
+    font-size: $font-base-size
+
+    header
+        font-weight: normal
+        letter-spacing: -0.05em
+        // position: absolute
+        // left: 30px
+        // top: 25px
+        // margin: 0
+        // padding: 0
+        font-size: 250%
+        margin-left: 10px
+        margin-bottom: 30px
+        +single-text-shadow(gray, 1px, 1px, 3px)
+    
+    section
+        width: $slide-width
+        margin: 
+            left: 10px
+            right: 10px
+        
+        padding: 20px 120px 120px 20px 
+        line-height: 2.5*$font-base-size
+    section.middle
+        text-align: center
+        display: table-cell
+        vertical-align: middle
+        height: $slide-body-height
+
+.slide#start
+    header
+        text-align: center
+        margin-top: 150px
+
+#bio
+    .name
+        font-size: 200%

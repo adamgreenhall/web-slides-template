@@ -1,0 +1,14 @@
+!!!
+%html{:lang=>"en"}
+    %head
+        %title #{(@title||data.page.title)||""}
+        %link{:rel=>'stylesheet', :href=>'/stylesheets/site.css', :type => "text/css"}
+        
+    %body
+        =partial('navigation')
+        .presentation
+            #presentation-counter
+            .slides
+                = yield
+        %script{:type => "text/javascript", :src=>'/javascripts/utils.js'}
+        %script{:type => "text/javascript", :src=>'/javascripts/hyphenator.js'}
